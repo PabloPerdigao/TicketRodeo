@@ -4,3 +4,28 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary-color: #fffffa;
+  --secondary-color: #421216;
+  --tertiary-color: #ceaf87;
+
+  --text-color: #fffffa;
+  --bg-color: #421216;
+
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  line-height: normal;
+
+  background-image: url("/assets/images/bg-festa-barretos.png");
+  background-size: cover;
+  color: var(--text-color);
+  background-attachment: fixed;
+}
+
+
+
+
+
