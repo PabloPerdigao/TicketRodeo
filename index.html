@@ -1,14 +1,134 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ticket Rodeo | Festa do Peão 2026</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ticket Rodeo | Festa do Peão 2026</title>
 
-  <link rel="stylesheet" href="CSS/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="">
+        <img
+          src="/assets/images/logo-brama.png"
+          alt="Logo da Brama"
+          id="logo-brama"
+        />
+        <img
+          src="/assets/images/circuito-sertanejo.png"
+          alt="logo do circuito sertanejo"
+          id="logo-circuito-sertanejo"
+        />
+        <img
+          src="/assets/images/barretos-2026.png"
+          alt="Logo de Barretos 2026"
+          id="barretos-2026"
+        />
+      </a>
+      <hgroup>
+        <h1>71ª Festa do Peão de Barretos</h1>
+        <h2>20 a 30 de Agosto de 2026</h2>
+        <p>O Maior Evento de Montarias do Mundo</p>
+      </hgroup>
+    </header>
+
+    <main>
+      <section class="calculadora-ingressos">
+        <hgroup>
+          <h2>Garanta Já Seu Ticket Barretos 2026</h2>
+          <p>
+            Selecione o show, setor e quantidade de ingressos para adquirir.
+          </p>
+        </hgroup>
+
+        <form action="get" id="form-calculadora">
+          <legend>O Brasil se Encontra Aqui!</legend>
+
+          <fieldset>
+            <label for="show">Data & Show</label>
+            <select id="show" name="show" required>
+              <option value="">Selecione a data</option>
+              <option value="20-ago">
+                20/08 - Fernando & Sorocaba | Zé Neto & Cristiano | Léo Foguete
+              </option>
+              <option value="21-ago">
+                21/08 - Fernando & Sorocaba | Zé Neto & Cristiano | Léo Foguete
+              </option>
+              <option value="22-ago">
+                22/08 - Fernando & Sorocaba | Zé Neto & Cristiano | Léo Foguete
+              </option>
+              <option value="23-ago">
+                23/08 - Fernando & Sorocaba | Zé Neto & Cristiano | Léo Foguete
+              </option>
+              <option value="24-ago">
+                24/08 - Fernando & Sorocaba | Zé Neto & Cristiano | Léo Foguete
+              </option>
+              <option value="25-ago">25 de Agosto - Terça-Feira</option>
+              <option value="26-ago">26 de Agosto - Quarta-feira</option>
+              <option value="27-ago">27 de Agosto - Quinta-feira</option>
+              <option value="28-ago">28 de Agosto - Sexta-feira</option>
+              <option value="29-ago">29 de Agosto - Sábado</option>
+              <option value="30-ago">30 de Agosto - Domingo</option>
+            </select>
+          </fieldset>
+
+          <fieldset>
+            <label for="tipo-entrada">Modalidades de Ingressos:</label>
+            <select name="tipo-entrada" id="tipo-entrada" required>
+              <option value="" disabled selected hidden >Selecione o tipo de entrada</option>
+              <option value="entrada-1">Estudante</option>
+              <option value="entrada-2">Solidária</option>
+              <option value="entrada-3">Inteira</option>
+            </select>
+          </fieldset>
+
+          <fieldset>
+            <label for="setores">Setor:</label>
+            <select name="setores" id="setores" required>
+              <option value="">Selecione o setor</option>
+              <option value="setor-1">Parque, Rodeio, Show</option>
+              <option value="setor-2">Camarote Super Bull Ballantine</option>
+              <option value="setor-3">Área Vip</option>
+              <option value="setor-5">Camarote Brama</option>
+              <option value="setor-4">Pista Gold</option>
+            </select>
+          </fieldset>
+
+
+          <fieldset>
+            <label for="quantidade">Quantidade de Ingressos:</label>
+            <input type="number" name="quantidade" id="quantidade" min="1" max="10" required>
+          </fieldset>
+
+          <button type="submit" form="form-calculadora" class="btn-comprar">Adicionar ao Carrinho</button>
+        </form>
+      </section>
+
+      <section class="checkout-ingressos">
+          <hgroup>
+            <h2>Resumo do Pedido</h2>
+            <p>Confira os detalhes do seu pedido antes de finalizar a compra.</p>
+          </hgroup>
   
-  <script src="js/calculadora-ingresso.js"></script>
-</body>
+          <article class="resumo-pedido">
+            <p><strong>Data & Show:</strong> <span id="selecao-data-show">-</span></p>
+            <p><strong>Tipo de Entrada:</strong> <span id="selecao-tipo-entrada">-</span></p>
+            <p><strong>Setor:</strong> <span id="selecao-setor">-</span></p>
+            <p><strong>Quantidade:</strong> <span id="selecao-quantidade">-</span></p>
+            <p><strong>Total:</strong> R$ <span id="total">0,00</span></p>
+          </article>
+  
+          <button type="submit" form="form-calculadora" class="btn-comprar">Finalizar Pedido</button>
+      </section>
+    </main>
+
+    <img
+      src="/assets/images/bg-festa-barretos.png"
+      alt="foto da festa do peão de barretos"
+      class="bg-festa"
+    />
+
+    <script src="js/calculadora-ingresso.js"></script>
+  </body>
 </html>
