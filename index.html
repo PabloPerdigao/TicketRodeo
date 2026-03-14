@@ -14,47 +14,51 @@
     <title>Ticket Rodeo | Festa do Peão 2026</title>
 
     <link rel="stylesheet" href="CSS/style.css" />
-    
-
-
   </head>
   <body>
     <header>
-      <a href="">
+      <a href="#">
         <img
           src="/assets/images/logo-brama.png"
           alt="Logo da Brama"
-          id="logo-brama"
-        />
-        <img
-          src="/assets/images/circuito-sertanejo.png"
-          alt="logo do circuito sertanejo"
-          id="logo-circuito-sertanejo"
-        />
-        <img
-          src="/assets/images/barretos-2026.png"
-          alt="Logo de Barretos 2026"
-          id="barretos-2026"
+          class="logo-brama"
         />
       </a>
-      <hgroup>
-        <h1>71ª Festa do Peão de Barretos</h1>
-        <h2>20 a 30 de Agosto de 2026</h2>
-        <p>O Maior Evento de Montarias do Mundo</p>
-      </hgroup>
     </header>
 
+    <section class="hero">
+      <img
+        src="/assets/images/circuito-sertanejo.png"
+        alt="logo do circuito sertanejo"
+        class="logo-circuito-sertanejo"
+      />
+      <h1>71ª Festa do Peão de Boiadeiro</h1>
+      <img
+        src="/assets/images/barretos-2026.png"
+        alt="Logo de Barretos 2026"
+        class="barretos-2026"
+      />
+      <hgroup>
+        <h2>20 a 30 de Agosto de 2026</h2>
+        <p><mark>O Maior Evento de Montarias do Mundo</mark></p>
+      </hgroup>
+    </section>
+
+
+
     <main>
-      <section class="calculadora-ingressos">
-        <hgroup>
-          <h2>Garanta Já Seu Ticket Barretos 2026</h2>
-          <p>
-            Selecione o show, setor e quantidade de ingressos para adquirir.
-          </p>
-        </hgroup>
+      <section class="compra-ingressos">
+        <header>
+          <hgroup>
+            <h2>Garanta Já Seu Ticket Barretos 2026</h2>
+            <p>
+              Selecione o show, setor e quantidade de ingressos para adquirir.
+            </p>
+          </hgroup>
+          <img src="/assets/images/brasil_se_encontra_aqui.webp" alt="O Brasil se Encontra Aqui" class="slogan"/>
+        </header>
 
         <form action="get" id="form-calculadora">
-          <legend>O Brasil se Encontra Aqui!</legend>
 
           <fieldset>
             <label for="show">Data & Show</label>
@@ -120,7 +124,7 @@
             />
           </fieldset>
 
-          <button type="submit" form="form-calculadora" class="btn-comprar">
+          <button type="submit" form="form-calculadora" id="btn-comprar">
             Adicionar ao Carrinho
           </button>
         </form>
