@@ -3,9 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Ticket Rodeo | Festa do Peão 2026</title>
 
     <link rel="stylesheet" href="CSS/style.css" />
+    
+
+
   </head>
   <body>
     <header>
@@ -76,7 +87,9 @@
           <fieldset>
             <label for="tipo-entrada">Modalidades de Ingressos:</label>
             <select name="tipo-entrada" id="tipo-entrada" required>
-              <option value="" disabled selected hidden >Selecione o tipo de entrada</option>
+              <option value="" disabled selected hidden>
+                Selecione o tipo de entrada
+              </option>
               <option value="entrada-1">Estudante</option>
               <option value="entrada-2">Solidária</option>
               <option value="entrada-3">Inteira</option>
@@ -95,39 +108,50 @@
             </select>
           </fieldset>
 
-
           <fieldset>
             <label for="quantidade">Quantidade de Ingressos:</label>
-            <input type="number" name="quantidade" id="quantidade" min="1" max="10" required>
+            <input
+              type="number"
+              name="quantidade"
+              id="quantidade"
+              min="1"
+              max="10"
+              required
+            />
           </fieldset>
 
-          <button type="submit" form="form-calculadora" class="btn-comprar">Adicionar ao Carrinho</button>
+          <button type="submit" form="form-calculadora" class="btn-comprar">
+            Adicionar ao Carrinho
+          </button>
         </form>
       </section>
 
       <section class="checkout-ingressos">
-          <hgroup>
-            <h2>Resumo do Pedido</h2>
-            <p>Confira os detalhes do seu pedido antes de finalizar a compra.</p>
-          </hgroup>
-  
-          <article class="resumo-pedido">
-            <p><strong>Data & Show:</strong> <span id="selecao-data-show">-</span></p>
-            <p><strong>Tipo de Entrada:</strong> <span id="selecao-tipo-entrada">-</span></p>
-            <p><strong>Setor:</strong> <span id="selecao-setor">-</span></p>
-            <p><strong>Quantidade:</strong> <span id="selecao-quantidade">-</span></p>
-            <p><strong>Total:</strong> R$ <span id="total">0,00</span></p>
-          </article>
-  
-          <button type="submit" form="form-calculadora" class="btn-comprar">Finalizar Pedido</button>
+        <hgroup>
+          <h2>Resumo do Pedido</h2>
+          <p>Confira os detalhes do seu pedido antes de finalizar a compra.</p>
+        </hgroup>
+
+        <article class="resumo-pedido">
+          <p>
+            <strong>Data & Show:</strong> <span id="selecao-data-show">-</span>
+          </p>
+          <p>
+            <strong>Tipo de Entrada:</strong>
+            <span id="selecao-tipo-entrada">-</span>
+          </p>
+          <p><strong>Setor:</strong> <span id="selecao-setor">-</span></p>
+          <p>
+            <strong>Quantidade:</strong> <span id="selecao-quantidade">-</span>
+          </p>
+          <p><strong>Total:</strong> R$ <span id="total">0,00</span></p>
+        </article>
+
+        <button type="submit" form="form-calculadora" class="btn-comprar">
+          Finalizar Pedido
+        </button>
       </section>
     </main>
-
-    <img
-      src="/assets/images/bg-festa-barretos.png"
-      alt="foto da festa do peão de barretos"
-      class="bg-festa"
-    />
 
     <script src="js/calculadora-ingresso.js"></script>
   </body>
