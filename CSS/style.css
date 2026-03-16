@@ -227,7 +227,7 @@ blockquote {
 }
 
 #form-calculadora fieldset select:hover {
-  border-color: var(--text-color);
+  border-color: var(--secondary-color);
   background-color: var(--secondary-color);
   color: var(--primary-color);
 }
@@ -240,7 +240,7 @@ blockquote {
 #form-calculadora fieldset select:focus,
 #form-calculadora fieldset input:focus {
   outline: none;
-  border-color: var(--text-color);
+  border-color: var(--secondary-color);
   box-shadow: 0 0 5px var(--secondary-color);
 }
 
