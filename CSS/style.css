@@ -73,18 +73,18 @@ header {
 }
 
 .logo-ticket {
-  width: 268px;
+  width: 198px;
   height: auto;
 }
 
 .hero .logo-circuito-sertanejo {
-  width: 300px;
+  width: 228px;
   height: auto;
   max-width: 100%;
 }
 
 .hero .barretos-2026 {
-  width: 600px;
+  width: 568px;
   height: auto;
   max-width: 100%;
 }
@@ -99,7 +99,7 @@ header {
 }
 
 .hero h1 {
-  font-size: 3.6rem;
+  font-size: 3.2rem;
   font-weight: bold;
   font-style: italic;
 }
