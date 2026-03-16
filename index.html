@@ -19,9 +19,9 @@
     <header>
       <a href="#">
         <img
-          src="/assets/images/logo-brama.png"
-          alt="Logo da Brama"
-          class="logo-brama"
+          src="/assets/images/logo-ticket.png"
+          alt="Logo da Ticket Rodeo"
+          class="logo-ticket"
         />
       </a>
     </header>
@@ -34,7 +34,7 @@
       />
       <h1>71ª Festa do Peão de Boiadeiro</h1>
       <img
-        src="/assets/images/barretos-2026.png"
+        src="/assets/images/barretos2026.png"
         alt="Logo de Barretos 2026"
         class="barretos-2026"
       />
@@ -44,117 +44,182 @@
       </hgroup>
     </section>
 
-
-
     <main>
       <section class="compra-ingressos">
-        <header>
-          <hgroup>
-            <h2>Garanta Já Seu Ticket Barretos 2026</h2>
-            <p>
-              Selecione o show, setor e quantidade de ingressos para adquirir.
-            </p>
-          </hgroup>
-          <img src="/assets/images/brasil_se_encontra_aqui.webp" alt="O Brasil se Encontra Aqui" class="slogan"/>
-        </header>
-
+        
         <form action="get" id="form-calculadora">
+          <header>
+            <hgroup>
+              <h2>Garanta Já Seu Ticket Barretos 2026</h2>
+              <p>
+                Selecione o show, setor e quantidade de ingressos para adquirir.
+              </p>
+            </hgroup>
+            <img
+            src="/assets/images/brasil_se_encontra_aqui.webp"
+            alt="O Brasil se Encontra Aqui"
+            class="slogan"
+            />
+          </header>
+            <blockquote>
+              <p>
+                <strong>Importante:</strong> Os preços dos ingressos variam de
+                acordo com a data, show e setor escolhido. Selecione suas
+                preferências para visualizar o valor total do seu pedido.
+              </p>
+            </blockquote>
 
-          <fieldset>
-            <label for="show">Data & Show</label>
-            <select id="show" name="show" required>
-              <option value="">Selecione a data</option>
-              <option value="20-ago">
-                20/08 - Fernando & Sorocaba | Zé Neto & Cristiano | Léo Foguete
-              </option>
-              <option value="21-ago">
-                21/08 - Fernando & Sorocaba | Zé Neto & Cristiano | Léo Foguete
-              </option>
-              <option value="22-ago">
-                22/08 - Fernando & Sorocaba | Zé Neto & Cristiano | Léo Foguete
-              </option>
-              <option value="23-ago">
-                23/08 - Fernando & Sorocaba | Zé Neto & Cristiano | Léo Foguete
-              </option>
-              <option value="24-ago">
-                24/08 - Fernando & Sorocaba | Zé Neto & Cristiano | Léo Foguete
-              </option>
-              <option value="25-ago">25 de Agosto - Terça-Feira</option>
-              <option value="26-ago">26 de Agosto - Quarta-feira</option>
-              <option value="27-ago">27 de Agosto - Quinta-feira</option>
-              <option value="28-ago">28 de Agosto - Sexta-feira</option>
-              <option value="29-ago">29 de Agosto - Sábado</option>
-              <option value="30-ago">30 de Agosto - Domingo</option>
-            </select>
-          </fieldset>
-
-          <fieldset>
-            <label for="tipo-entrada">Modalidades de Ingressos:</label>
-            <select name="tipo-entrada" id="tipo-entrada" required>
-              <option value="" disabled selected hidden>
-                Selecione o tipo de entrada
-              </option>
-              <option value="entrada-1">Estudante</option>
-              <option value="entrada-2">Solidária</option>
-              <option value="entrada-3">Inteira</option>
-            </select>
-          </fieldset>
-
-          <fieldset>
-            <label for="setores">Setor:</label>
-            <select name="setores" id="setores" required>
-              <option value="">Selecione o setor</option>
-              <option value="setor-1">Parque, Rodeio, Show</option>
-              <option value="setor-2">Camarote Super Bull Ballantine</option>
-              <option value="setor-3">Área Vip</option>
-              <option value="setor-5">Camarote Brama</option>
-              <option value="setor-4">Pista Gold</option>
-            </select>
-          </fieldset>
-
-          <fieldset>
-            <label for="quantidade">Quantidade de Ingressos:</label>
-            <input
+          <div class="container-forms">
+            <fieldset class="data-show">
+              <label for="data-show">Data & Show</label>
+              <select id="data-show" name="data-show" required>
+                <option value="">Selecione a data</option>
+                <optgroup label="1ª Semana | 20 a 24 de Agosto">
+                  <option value="20-ago">
+                    20/08 - João Bosco & Vinícius | Fernando & Sorocaba | Diego &
+                    Arnaldo
+                  </option>
+                  <option value="21-ago">
+                    21/08 - Zé Vaqueiro | Léo Foguete | Nattan
+                  </option>
+                  <option value="22-ago">
+                    22/08 - Jads & Jadson | Zé Neto & Cristiano | Bruno & Barreto
+                    | Country Beach
+                  </option>
+                  <option value="23-ago">
+                    23/08 - Nattanzinho Lima | Munhoz & Mariano | Gustavo Lima |
+                    Us Agroboy
+                  </option>
+                  <option value="24-ago">
+                    24/08 - Gino & Geno | Rio Negro & Solimões | Leonardo | Zé
+                    Felipe
+                  </option>
+                </optgroup>
+                <optgroup label="2ª Semana | 25 a 30 de Agosto">
+                  <option value="25-ago">
+                    25/08 - Lauana Prado | Bruno & Marrone | Edson & Hudson |
+                    Mateus & Kaun
+                  </option>
+                  <option value="26-ago">
+                    26/08 - Wesley Safadão | Xandi Avião | Barões da Pisadinha |
+                    Felipe Amorim
+                  </option>
+                  <option value="27-ago">
+                    27/08 - Matogrosso & Mathias | Bruno & Marrone | Ana Castela |
+                    Jiraya Uai
+                  </option>
+                  <option value="28-ago">
+                    28/08 - César Menotti & Fabiano | Diego & Victor Hugo João
+                    Gomes | Brenno & Matheus
+                  </option>
+                  <option value="29-ago">
+                    29/08 - Ícaro & Gilmar | João Neto & Frederico | Panda |
+                    Fiduma & Jeca |
+                  </option>
+                  <option value="30-ago">
+                    30/08 - Jorge & Matheus | Antony & Gabriel | Hugo & Guilherme
+                    |
+                  </option>
+                </optgroup>
+              </select>
+            </fieldset>
+            
+            <fieldset class="tipo-entrada">
+              <label for="tipo-entrada">Modalidades de Ingressos:</label>
+              <select name="tipo-entrada" id="tipo-entrada" required>
+                <option value="" disabled selected hidden>
+                  Selecione o tipo de entrada
+                </option>
+                <option value="entrada-1">Estudante</option>
+                <option value="entrada-2">Solidária</option>
+                <option value="entrada-3">Inteira</option>
+              </select>
+            </fieldset>
+            
+            <fieldset class="setores">
+              <label for="setores">Setor:</label>
+              <select name="setores" id="setores" required>
+                <option value="">Selecione o setor</option>
+                <option value="setor-1">Parque, Rodeio, Show</option>
+                <option value="setor-2">Camarote Super Bull Ballantine</option>
+                <option value="setor-3">Área Vip</option>
+                <option value="setor-5">Camarote Brama</option>
+                <option value="setor-4">Pista Gold</option>
+              </select>
+            </fieldset>
+            
+            <fieldset class="quantidade">
+              <label for="quantidade">Ingressos:</label>
+              <input
               type="number"
               name="quantidade"
               id="quantidade"
               min="1"
               max="10"
               required
-            />
-          </fieldset>
-
+              placeholder="Escolha a quantidade de ingressos que desejar adquirir"
+              />
+            </fieldset>
+          </div>
+          
           <button type="submit" form="form-calculadora" id="btn-comprar">
             Adicionar ao Carrinho
           </button>
         </form>
       </section>
 
-      <section class="checkout-ingressos">
-        <hgroup>
-          <h2>Resumo do Pedido</h2>
-          <p>Confira os detalhes do seu pedido antes de finalizar a compra.</p>
-        </hgroup>
+      <section class="setores">
+          <hgroup>
+            <h2>Setores</h2>
+            <p>Conheça os diferentes setores disponíveis para assistir aos shows e rodeios.</p>
+          </hgroup>
 
-        <article class="resumo-pedido">
-          <p>
-            <strong>Data & Show:</strong> <span id="selecao-data-show">-</span>
-          </p>
-          <p>
-            <strong>Tipo de Entrada:</strong>
-            <span id="selecao-tipo-entrada">-</span>
-          </p>
-          <p><strong>Setor:</strong> <span id="selecao-setor">-</span></p>
-          <p>
-            <strong>Quantidade:</strong> <span id="selecao-quantidade">-</span>
-          </p>
-          <p><strong>Total:</strong> R$ <span id="total">0,00</span></p>
-        </article>
+          <figure class="mapa-setores">
+            <img src="/assets/images/mapa-arena-barretos.png" alt="Mapa da Arena de Barretos">
+            <figcaption>
+              Mapa da Arena de Barretos, destacando os diferentes setores disponíveis para os visitantes. O mapa inclui áreas como o parque, rodeio, camarotes e pista gold, proporcionando uma visão geral da disposição dos espaços no evento.
+            </figcaption>
+          </figure>
 
-        <button type="submit" form="form-calculadora" class="btn-comprar">
-          Finalizar Pedido
-        </button>
+          <article class="descricao-setores">
+            
+            <p><strong>Parque, Rodeio, Show:</strong> Acesso ao parque, rodeio e shows. Localização: Área geral do evento.</p>
+            <p><strong>Camarote Super Bull Ballantine:</strong> Acesso ao camarote exclusivo com vista privilegiada para o rodeio e shows. Localização: Próximo à arena de rodeio.</p>
+            <p><strong>Área Vip:</strong> Acesso à área VIP com serviços exclusivos e vista privilegiada para os shows. Localização: Próximo ao palco principal.</p>
+            <p><strong>Camarote Brama:</strong> Acesso ao camarote exclusivo da Brama com vista privilegiada para os shows. Localização: Próximo ao palco principal.</p>
+            <p><strong>Pista Gold:</strong> Acesso à pista premium com vista privilegiada para os shows. Localização: Próximo ao palco principal.</p>
+
       </section>
+      
+      <aside>
+        <section class="checkout-ingressos">
+          <hgroup>
+            <h2>Resumo do Pedido</h2>
+            <p>Confira os detalhes do seu pedido antes de finalizar a compra.</p>
+          </hgroup>
+          
+          <article class="resumo-pedido">
+            <p>
+              <strong>Data & Show:</strong> <span id="selecao-data-show">-</span>
+            </p>
+            <p>
+              <strong>Tipo de Entrada:</strong>
+              <span id="selecao-tipo-entrada">-</span>
+            </p>
+            <p><strong>Setor:</strong> <span id="selecao-setor">-</span></p>
+            <p>
+              <strong>Quantidade:</strong> <span id="selecao-quantidade">-</span>
+            </p>
+            <p><strong>Total:</strong> R$ <span id="total">0,00</span></p>
+          </article>
+  
+          <button type="submit" form="form-calculadora" class="btn-comprar">
+            Finalizar Pedido
+          </button>
+        </section>
+      </aside>
+
+      
     </main>
 
     <script src="js/calculadora-ingresso.js"></script>
