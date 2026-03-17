@@ -254,7 +254,7 @@ blockquote {
   font-size: 1.8rem;
   font-weight: bold;
   color: var(--bg-color);
-  background-color: var(--shadow-color);
+  background-color: var(--secondary-color);
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -263,7 +263,7 @@ blockquote {
 }
 
 .compra-ingressos #form-calculadora #btn-comprar:hover {
-  background-color: var(--secondary-color);
+  background-color: #e6cba7;
   transform: translateY(-2px);
 }
 
