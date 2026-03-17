@@ -47,7 +47,7 @@
     <main>
       <section class="compra-ingressos">
         
-        <form action="get" id="form-calculadora">
+        <form action="" id="form-calculadora">
           <header>
             <hgroup>
               <h2>Garanta Já Seu Ticket Barretos 2026</h2>
@@ -73,9 +73,11 @@
             <fieldset class="data-show">
               <label for="data-show">Data & Show</label>
               <select id="data-show" name="data-show" required>
-                <option value="">Selecione a data</option>
+                <option value="" disabled selected hidden>
+                  Selecione a data
+                </option>
                 <optgroup label="1ª Semana | 20 a 24 de Agosto">
-                  <option value="20-ago">
+                  <option value="362.75">
                     20/08 - João Bosco & Vinícius | Fernando & Sorocaba | Diego &
                     Arnaldo
                   </option>
@@ -118,7 +120,6 @@
                   </option>
                   <option value="30-ago">
                     30/08 - Jorge & Matheus | Antony & Gabriel | Hugo & Guilherme
-                    |
                   </option>
                 </optgroup>
               </select>
@@ -130,20 +131,22 @@
                 <option value="" disabled selected hidden>
                   Selecione o tipo de entrada
                 </option>
-                <option value="entrada-1">Estudante</option>
-                <option value="entrada-2">Solidária</option>
-                <option value="entrada-3">Inteira</option>
+                <option value="165.50">Estudante</option>
+                <option value="195.00">Solidária</option>
+                <option value="250.00">Inteira</option>
               </select>
             </fieldset>
             
             <fieldset class="setores">
               <label for="setores">Setor:</label>
               <select name="setores" id="setores" required>
-                <option value="">Selecione o setor</option>
-                <option value="setor-1">Parque, Rodeio, Show</option>
-                <option value="setor-2">Camarote Super Bull Ballantine</option>
-                <option value="setor-3">Área Vip</option>
-                <option value="setor-5">Camarote Brama</option>
+                <option value="" disabled selected hidden>
+                  Selecione o setor
+                </option>
+                <option value="65.70">Parque, Rodeio & Show  (pista)</option>
+                <option value="Camarote Balantine">Camarote Super Bull Ballantine</option>
+                <option value="Area Vip">Área Vip</option>
+                <option value="Camarote Brahma">Camarote Brama</option>
                 <option value="setor-4">Pista Gold</option>
               </select>
             </fieldset>
@@ -162,7 +165,7 @@
             </fieldset>
           </div>
           
-          <button type="submit" form="form-calculadora" id="btn-comprar">
+          <button type="button" form="form-calculadora" id="btn-comprar">
             Adicionar ao Carrinho
           </button>
         </form>
@@ -213,7 +216,7 @@
             <p><strong>Total:</strong> R$ <span id="total">0,00</span></p>
           </article>
   
-          <button type="submit" form="form-calculadora" class="btn-comprar">
+          <button type="button" form="form-calculadora" class="btn-comprar">
             Finalizar Pedido
           </button>
         </section>
