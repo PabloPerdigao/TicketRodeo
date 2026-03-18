@@ -267,6 +267,11 @@ blockquote {
   transform: translateY(-2px);
 }
 
+#msgm-erro {
+  color: #e0354480;
+  font-size: 1rem;
+}
+
 /* --- TICKET RODEO - SETORES ---*/
 
 section.setores {
