@@ -326,6 +326,13 @@ section.setores hgroup p {
   padding-bottom: 12px;
   border-bottom: 1px solid var(--muted-color);
 }
+.descricao-setores p span {
+ font-weight: 700;
+}
+
+.descricao-setores p:last-child {
+  border-bottom: none;
+}
 
 .descricao-setores p strong {
   color: var(--secondary-color);
@@ -434,9 +441,9 @@ aside {
   main {
     grid-template-columns: 1fr;
     grid-template-areas: 
-      "compra"
-      "setores"
-      "aside";
+    "setores"
+    "compra"
+    "aside";
   }
 
   aside {
