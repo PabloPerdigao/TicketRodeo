@@ -2,6 +2,7 @@
 // CAPTURA DOS ELEMENTOS 
 
 let btnComprar = document.getElementById("btn-comprar");
+
 let finalizarPedido = document.getElementById("finalizar-pedido");
 
 let dataShow = document.getElementById("data-show");

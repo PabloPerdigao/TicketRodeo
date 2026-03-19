@@ -29,12 +29,12 @@ body {
   color: var(--text-color);
   background-attachment: fixed;
 
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  gap: 64px;
+  gap: 64px; */
   
   width: 100%;
   height: auto;
@@ -61,6 +61,13 @@ header {
   margin: 0 auto;
 }
 
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+}
 /* TICKET RODEO - HERO */
 
 .hero {
@@ -118,19 +125,81 @@ header {
   font-style: italic;
 }
 
-main {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 400px;
+/* TICKET RODEO - MENU */
 
-  grid-template-areas: 
-    "compra aside"
-    "setores aside";
-  gap: 32px;
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
   width: 100%;
-  max-width: 1200px;
-  padding: 0 24px;
+  
+  background-color: #1d17167e;
+  box-shadow: 0px 5px 10px -2px rgba(198, 67, 30, 0.615);
+}
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+}
+
+.nav-links a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+
+.nav-links a:hover {
+  color: var(--secondary-color);
+}
+
+
+/* TICKET RODEO - MAIN */
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+  background-color: #4212168b;
+  width: 100%;
+
+}
+
+.ingressos-container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: minmax(0, 1fr) 400px;
+  
+  grid-template-areas: 
+  "title title"
+  "compra aside"
+  "setores aside";
+  gap: 64px;
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 64px;
   align-items: start; 
 }
+
+.ingressos-container hgroup {
+  grid-area: title;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+.ingressos-container hgroup p {
+  text-align: center;
+}
+
 
 /* TICKET RODEO - COMPRA INGRESSOS */
 
@@ -144,6 +213,7 @@ main {
   border: 2px solid var(--secondary-color);
   border-radius: 22px;
   width: 100%;
+  max-width: 900px;
 }
 
 .compra-ingressos .slogan {
@@ -179,7 +249,7 @@ blockquote {
   color: var(--primary-color);
   font-size: 1.4rem;
   width: 100%;
-
+  
   position: relative;
 }
 
@@ -283,6 +353,7 @@ section.setores {
   background-color: var(--tertiary-color);
   border: 2px solid var(--secondary-color);
   border-radius: 22px;
+  max-width: 900px;
 }
 
 section.setores hgroup h2 {
@@ -322,26 +393,35 @@ section.setores hgroup p {
 .descricao-setores {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 8px;
 }
 
-.descricao-setores p {
+.descricao-setores dd {
   font-size: 1.4rem;
   line-height: 1.5;
-  padding-bottom: 12px;
+  padding-bottom: 16px;
   border-bottom: 1px solid var(--muted-color);
-}
-.descricao-setores p span {
- font-weight: 700;
+  margin-left: 0; 
 }
 
-.descricao-setores p:last-child {
+.descricao-setores dd span {
+  font-weight: 700;
+}
+
+.descricao-setores dd:last-of-type {
   border-bottom: none;
 }
 
-.descricao-setores p strong {
+
+.descricao-setores dt {
   color: var(--secondary-color);
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-top: 16px;
+}
+
+.descricao-setores dt:first-child {
+  margin-top: 0;
 }
 
 /* TICKET RODEO - RESUMO DO PEDIDO */
@@ -446,6 +526,7 @@ aside {
   main {
     grid-template-columns: 1fr;
     grid-template-areas: 
+    "title"
     "setores"
     "compra"
     "aside";
