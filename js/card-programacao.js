@@ -3,7 +3,7 @@ const programacaoSemana = {
   semana1: [
     {
       dia: "20 de agosto (quinta-feira)",
-      img: "assets/images/programacao/semana1.png",
+      img: "assets/images/programacao/atracao1.png",
       alt: "cantores show 20 de agosto",
       shows: [
         { horario: "19:00h", atracao: "- Provas de Montaria e Rodeio" },
@@ -15,7 +15,7 @@ const programacaoSemana = {
 
     {
       dia: "21 de agosto (sexta-feira)",
-      img: "assets/images/programacao/semana2.png",
+      img: "assets/images/programacao/atracao2.png",
       alt: "cantores show 21 de agosto",
       shows: [
         { horario: "19:30h", atracao: "- Provas de Montaria e Rodeio" },
@@ -27,7 +27,7 @@ const programacaoSemana = {
 
     {
       dia: "22 de agosto (sábado)",
-      img: "assets/images/programacao/semana3.png",
+      img: "assets/images/programacao/atracao3.png",
       alt: "cantores show 22 de agosto",
       shows: [
         { horario: "19:00h", atracao: "- Provas de Montaria e Rodeio" },
@@ -40,7 +40,7 @@ const programacaoSemana = {
 
     {
       dia: "23 de agosto (domingo)",
-      img: "assets/images/programacao/semana4.png",
+      img: "assets/images/programacao/atracao4.png",
       alt: "cantores show 23 de agosto",
       shows: [
         { horario: "19:45h", atracao: "- Provas de Montaria e Rodeio" },
@@ -53,14 +53,13 @@ const programacaoSemana = {
 
     {
       dia: "24 de agosto (segunda-feira)",
-      img: "assets/images/programacao/semana5.png",
+      img: "assets/images/programacao/atracao5.png",
       alt: "cantores show 24 de agosto",
       shows: [
         { horario: "19:00h", atracao: "- Provas de Montaria e Rodeio" },
         { horario: "21:00h", atracao: "- Gino & Geno" },
         { horario: "22:30h", atracao: "- Rio Negro & Solimões" },
-        { horario: "00:30h", atracao: "- Leonardo" },
-        { horario: "02:00h", atracao: "- Zé Felipe" },
+        { horario: "00:30h", atracao: "- Leonardo" }
       ],
     },
   ],
@@ -68,7 +67,7 @@ const programacaoSemana = {
   semana2: [
     {
       dia: "25 de agosto (terça-feira)",
-      img: "assets/images/programacao/semana6.png",
+      img: "assets/images/programacao/atracao6.png",
       alt: "cantores show 25 de agosto",
       shows: [
         { horario: "19:00h", atracao: "- Provas de Montaria e Rodeio" },
@@ -81,7 +80,7 @@ const programacaoSemana = {
 
     {
       dia: "26 de agosto (quarta-feira)",
-      img: "assets/images/programacao/semana7.png",
+      img: "assets/images/programacao/atracao7.png",
       alt: "cantores show 26 de agosto",
       shows: [
         { horario: "19:00h", atracao: "- Provas de Montaria e Rodeio" },
@@ -94,12 +93,12 @@ const programacaoSemana = {
 
     {
       dia: "27 de agosto (quinta-feira)",
-      img: "assets/images/programacao/semana8.png",
+      img: "assets/images/programacao/atracao8.png",
       alt: "cantores show 27 de agosto",
       shows: [
         { horario: "19:00h", atracao: "- Provas de Montaria e Rodeio" },
-        { horario: "21:00h", atracao: "- Matogrosso & Mathias" },
-        { horario: "22:30h", atracao: "- Bruno & Marrone" },
+        { horario: "21:00h", atracao: "- Vitor & Leo" },
+        { horario: "22:30h", atracao: "- Zezé Di Camargo & Luciano" },
         { horario: "00:30h", atracao: "- Ana Castela" },
         { horario: "02:00h", atracao: "- Jiraya Uai" },
       ],
@@ -107,20 +106,20 @@ const programacaoSemana = {
 
     {
       dia: "28 de agosto (sexta-feira)",
-      img: "assets/images/programacao/semana9.png",
+      img: "assets/images/programacao/atracao9.png",
       alt: "cantores show 28 de agosto",
       shows: [
         { horario: "19:45h", atracao: "- Provas de Montaria e Rodeio" },
         { horario: "21:00h", atracao: "- César Menotti & Fabiano" },
         { horario: "22:30h", atracao: "- Diego & Victor Hugo" },
-        { horario: "00:00h", atracao: "- João Gomes" },
+        { horario: "00:00h", atracao: "- Antony & Gabriel" },
         { horario: "02:00h", atracao: "- Brenno & Matheus" },
       ],
     },
 
     {
       dia: "29 de agosto (sábado)",
-      img: "assets/images/programacao/semana10.png",
+      img: "assets/images/programacao/atracao10.png",
       alt: "cantores show 29 de agosto",
       shows: [
         { horario: "19:00h", atracao: "- Provas de Montaria e Rodeio" },
@@ -133,14 +132,13 @@ const programacaoSemana = {
 
     {
       dia: "30 de agosto (domingo)",
-      img: "assets/images/programacao/semana11.png",
+      img: "assets/images/programacao/atracao11.png",
       alt: "cantores show 30 de agosto",
       shows: [
         { horario: "19:00h", atracao: "- Finais Provas de Montaria e Rodeio" },
-        { horario: "21:00h", atracao: "- Gino & Geno" },
-        { horario: "22:30h", atracao: "- Rio Negro & Solimões" },
-        { horario: "00:30h", atracao: "- Leonardo" },
-        { horario: "02:00h", atracao: "- Zé Felipe" },
+        { horario: "21:00h", atracao: "- Clayton & Romário" },
+        { horario: "22:30h", atracao: "- Jorge & Matheus" },
+        { horario: "00:30h", atracao: "- Hugo & Guilherme" }
       ],
     },
   ],
