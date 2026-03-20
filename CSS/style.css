@@ -28,13 +28,6 @@ body {
   font-size: 1.6rem;
   color: var(--text-color);
   background-attachment: fixed;
-
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  gap: 64px; */
   
   width: 100%;
   height: auto;
@@ -135,7 +128,7 @@ header {
   width: 100%;
   
   background-color: #1d17167e;
-  box-shadow: 0px 5px 10px -2px rgba(198, 67, 30, 0.615);
+  box-shadow: 0px 5px 10px -2px #c6431e9d;
 }
 
 .nav-links {
@@ -169,6 +162,85 @@ main {
   width: 100%;
 }
 
+/* TICKET RODEO - PROGRAMACAO */
+
+section.programacao {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  padding: 48px;
+  background-color: var(--bg-color);
+  box-shadow: 0px 5px 10px -2px #9c8566;
+  border-radius: 12px;
+
+  max-width: 1440px;
+  margin: 64px 64px 0 64px;
+
+}
+section.programacao hgroup {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+section.programacao hgroup h2 {
+  font-size: 2.6rem;
+  color: var(--secondary-color);
+  text-transform: uppercase;
+}
+
+.calendario-semana {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  border: 1px solid var(--secondary-color);
+}
+
+.primeira-semana, .segunda-semana {
+  display: flex;
+  flex-direction:column;
+  gap: 24px;
+  padding: 32px;
+  background-color: var(--tertiary-color);
+}
+
+.card-container1, .card-container2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  border: 1px solid var(--secondary-color);
+}
+
+.primeira-semana .card-container1 .card,
+.segunda-semana .card-container2 .card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  width: 100%;
+  height: auto;
+  padding: 8px;
+
+  
+  border: 1px solid var(--muted-color);
+}
+
+.primeira-semana .card-container1 .card img,
+.segunda-semana .card-container2 .card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
+
+
+/* INGRESSOS */
+
 .ingressos-container {
   display: grid;
   justify-content: center;
@@ -184,7 +256,6 @@ main {
   max-width: 1440px;
   padding: 0 64px;
   align-items: start; 
-  margin-top: 64px;
 }
 
 .ingressos-container hgroup {
@@ -201,8 +272,6 @@ main {
   text-align: start;
   text-transform: uppercase;
 }
-
-
 
 
 /* TICKET RODEO - COMPRA INGRESSOS */
@@ -515,26 +584,6 @@ aside {
 .checkout-ingressos .btn-comprar:hover {
   background-color: #e6cba7;
   transform: translateY(-2px);
-}
-
-/* TICKET RODEO - PROGRAMACAO */
-
-section.programacao {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  padding: 48px;
-  background-color: var(--bg-color);
-  box-shadow: 0px 5px 10px -2px #9c8566;
-  border-radius: 12px;
-
-  max-width: 1440px;
-  margin: 0 64px;
-}
-
-section.programacao hgroup h2 {
-  font-size: 2.6rem;
-  color: var(--secondary-color);
 }
 
 
