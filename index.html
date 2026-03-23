@@ -64,18 +64,134 @@
           </p>
         </hgroup>
 
+        <aside class="filtro-busca" id="filterForm">
+          <h4 class="">
+            Busque pelas atrações para planejar sua vinda e aproveitar ao máximo
+            cada momento!
+          </h4>
+
+          <form action="post" class="form-filtro-busca">
+            <input
+              type="search"
+              name="assunto"
+              id="assuntoField"
+              class="form-check-input"
+              placeholder="Buscar por atração"
+            />
+
+            <fieldset class="form-check" id="semanas">
+              <legend>Semanas</legend>
+              <div class="semana1">
+                <input
+                  type="radio"
+                  name="semana"
+                  id="semana1"
+                  value="semana1"
+                  class="form-check-input"
+                />
+                <label for="semana1" class="form-check-label">1ª</label>
+              </div>
+
+              <div class="semana2">
+                <input
+                  type="radio"
+                  name="semana"
+                  id="semana2"
+                  value="semana2"
+                  class="form-check-input"
+                />
+                <label for="semana2" class="form-check-label">2ª</label>
+              </div>
+            </fieldset>
+
+            <fieldset class="form-check" id="diasSemana">
+              <legend>Dias da Semana</legend>
+
+              <div id="dom">
+                <input
+                  type="checkbox"
+                  name="checkbox"
+                  class="form-check-input"
+                />
+                <label for="dom" class="form-check-label">Dom</label>
+              </div>
+
+              <div id="seg">
+                <input
+                  type="checkbox"
+                  name="checkbox"
+                  class="form-check-input"
+                />
+                <label for="seg" class="form-check-label">Seg</label>
+              </div>
+
+              <div id="ter">
+                <input
+                  type="checkbox"
+                  name="checkbox"
+                  class="form-check-input"
+                />
+                <label for="ter" class="form-check-label">Ter</label>
+              </div>
+
+              <div id="qua">
+                <input
+                  type="checkbox"
+                  name="checkbox"
+                  class="form-check-input"
+                />
+                <label for="qua" class="form-check-label">Qua</label>
+              </div>
+
+              <div id="qui">
+                <input
+                  type="checkbox"
+                  name="checkbox"
+                  class="form-check-input"
+                />
+                <label for="qui" class="form-check-label">Qui</label>
+              </div>
+
+              <div id="sex">
+                <input
+                  type="checkbox"
+                  name="checkbox"
+                  class="form-check-input"
+                />
+                <label for="sex" class="form-check-label">Sex</label>
+              </div>
+
+              <div id="sab">
+                <input
+                  type="checkbox"
+                  name="checkbox"
+                  class="form-check-input"
+                />
+                <label for="sab" class="form-check-label">Sab</label>
+              </div>
+            </fieldset>
+
+            <input
+              type="date"
+              class="form-control"
+              id="dataField"
+              placeholder="Data"
+            />
+            <button class="btn btn-primary btnFilter">Filtrar</button>
+          </form>
+        </aside>
+
         <div class="calendario-programacao">
           <section class="calendario-semana">
             <div class="primeira-semana">
               <h3>1ª Semana | Barretos 2026</h3>
               <!-- cards programação inseridos com JS -->
-               <div class="card-container1" ></div>
-            
+              <div class="card-container1"></div>
             </div>
             <div class="segunda-semana">
               <h3>2ª Semana | Barretos 2026</h3>
               <!-- cards programação inseridos com JS -->
-               <div class="card-container2" ></div>
+              <div class="card-container2"></div>
             </div>
           </section>
         </div>
@@ -165,7 +281,8 @@
                       Diego & Arnaldo
                     </option>
                     <option value="30-08">
-                      30/08 - Clayton & Romário | Jorge & Matheus | Hugo & Guilherme
+                      30/08 - Clayton & Romário | Jorge & Matheus | Hugo &
+                      Guilherme
                     </option>
                   </optgroup>
                 </select>
@@ -299,7 +416,7 @@
           </dl>
         </section>
 
-        <aside>
+        <aside class="resumo-pedido">
           <section class="checkout-ingressos">
             <hgroup>
               <h2>Resumo do Pedido</h2>
@@ -337,8 +454,6 @@
           </section>
         </aside>
       </div>
-
-      
     </main>
 
     <script src="/js/lista-precos.js"></script>
