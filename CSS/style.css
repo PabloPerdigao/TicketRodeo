@@ -277,6 +277,13 @@ section.programacao hgroup h2 {
   border-bottom: 1px solid var(--muted-color);
 }
 
+.primeira-semana .card-container1 .card ul li:nth-child(even),
+.segunda-semana .card-container2 .card ul li:nth-child(even) {
+  background-color: #421216b6;
+  padding: 4px;
+  
+}
+
 .primeira-semana .card-container1 .card ul li:last-child,
 .segunda-semana .card-container2 .card ul li:last-child {
   border-bottom: none;
